@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    box-sizing: border-box;
 }
+body{
+    margin:0;
+    font-family:Inter,sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap:11px;
+    background-color: blanchedalmond;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    
+    
+}
+header>img{
+    width: fit-content;
+}
+main{
+    padding: 10px 30px;
+}
+.add-ingrediant-form{
+    height: 40px;
+    display: flex;
+    justify-content: center;   
+    gap: 12px;
+    
+}
+.add-ingrediant-form>input{
+    border-radius: 6px;
+    border:1px solid #24549c;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    flex-grow:1;
+    min-width: 150px;
+    max-width: 400px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.add-ingrediant-form>button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 6px;
+    border:none;
+    background-color: aquamarine;
 }
