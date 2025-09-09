@@ -27,7 +27,18 @@ const Main = () => {
         />
         <button> + Add ingredient</button>
       </form>
-      <ul>{ingredientListItem}</ul>
+      {ingredients.length >0 && <section>
+        <h2>Ingredients on hand: </h2>
+        <ul className="ingredient-list" areia-live="polite">{ingredientListItem}</ul>
+        {ingredients.length>3 && <div className="get-recipe-container">
+          <div>
+            <h3>Ready for a recipe ?</h3>
+            <p>Generste a recipe from your list of ingredients.</p>
+          </div>
+          <button>Get a recipe</button>
+        </div>}
+      </section>}
+       
     </main>
   )
 }
